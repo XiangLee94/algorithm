@@ -13,6 +13,7 @@
         <module>linkedlist</module>
         <module>binarytree</module>
         <module>leetcode</module>
+        <module>sort</module>
     </modules>
 
     <build>
