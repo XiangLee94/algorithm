@@ -16,6 +16,7 @@
         <module>sort</module>
         <module>interesting</module>
         <module>binarytree</module>
+        <module>linkedlist</module>
     </modules>
 
     <build>

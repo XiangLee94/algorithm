@@ -50,7 +50,7 @@ public class Test {
 
     public static void main(String[] args) {
         System.out.println(Operation.getTreeHight(node5));
-        Operation.preOrder(root);
+        Operation.cengxuOrder(root);
     }
 
 

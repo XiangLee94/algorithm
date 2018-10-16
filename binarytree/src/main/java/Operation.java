@@ -1,3 +1,5 @@
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Stack;
 
 public class Operation {
@@ -24,6 +26,17 @@ public class Operation {
             stack.push(node.right);
             if(node.left != null)
             stack.push(node.left);
+        }
+    }
+
+    public static void cengxuOrder(TNode root){
+        Queue<TNode> queue = new LinkedList<>();
+        queue.add(root);
+        while (!queue.isEmpty()){
+            TNode node = queue.poll();
+            System.out.println(node.value);
+            if(node.left != null)queue.add(node.left);
+            if(node.right != null)queue.add(node.right);
         }
     }
 }
