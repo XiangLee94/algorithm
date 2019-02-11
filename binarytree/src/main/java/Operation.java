@@ -34,9 +34,21 @@ public class Operation {
         queue.add(root);
         while (!queue.isEmpty()){
             TNode node = queue.poll();
-            System.out.println(node.value);
+            System.out.print(node.value+" ");
             if(node.left != null)queue.add(node.left);
             if(node.right != null)queue.add(node.right);
         }
+    }
+
+    public static void midOrderRec(TNode root){
+        if(root != null){
+            midOrderRec(root.left);
+            System.out.println(root.value);
+            midOrderRec(root.right);
+        }
+    }
+
+    public static void midOrder(TNode root){
+
     }
 }
