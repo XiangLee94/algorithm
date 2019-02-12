@@ -1,8 +1,8 @@
 public class Operation {
-    public static void revengeNode(Node root){
-        if(root == null || root.next == null)
-            return;
-        Node p = root;
+    public static Node revengeNode(Node head){
+        if(head == null || head.next == null)
+            return head;
+        Node p = head;
         Node q = null;
         while (p != null){
             Node temp = p.next;
@@ -10,6 +10,7 @@ public class Operation {
             q = p;
             p = temp;
         }
+        return q;
     }
 
 }
