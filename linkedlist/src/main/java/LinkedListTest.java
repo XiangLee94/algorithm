@@ -22,7 +22,7 @@ public class LinkedListTest {
     }
 
     public static void main(String[] args) {
-        Node nodeLast = Operation.revengeNode(node1,3);
+        Node nodeLast = Operation.revengeNode(node1,1,5);
         while(nodeLast != null) {
             System.out.println(nodeLast.value);
             nodeLast = nodeLast.next;
